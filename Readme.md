@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Денис](https://up.htmlacademy.ru/htmlcss/22/user/678375).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Фоменко] (https://htmlacademy.ru/profile/s-fomenko).
 
 ---
 
