@@ -13,27 +13,28 @@
 <body>
 	<!-- ШАПКА  -->
 	<header class="main-header">
-		<div class="wrap header-top">
-			<p class="main-header-title">Техномарт</p>
-			<label for="main-header-search">Поиск
-				<input type="search" id="main-header-search">
-			</label>
-			<p class="main-header-bookmarks">Закладки: 0</p>
-			<p class="main-header-basket">Корзина: 0</p>
-			<a href="#" class="order">Оформить заказ</a>
+		<div class="header-top">
+			<div class="wrap ">
+				<a class="main-header-caption">Техномарт</a>
+				<p class="main-header-search">
+					<label for="main-header-search">Поиск</label>
+					<input type="search" id="main-header-search">
+				</p>
+				<p class="main-header-bookmarks">Закладки: 0</p>
+				<p class="main-header-basket">Корзина: 0</p>
+				<a href="#" class="order">Оформить заказ</a>
+			</div>
 		</div>
-	</header>
-	<main class="main-content">
-	<!-- СЕКЦИЯ НАВИГАЦИЯ ПО САЙТУ -->
-		<section class="page-navigation">
+		<!-- СЕКЦИЯ НАВИГАЦИЯ ПО САЙТУ -->
+		<section class="main-header-navigation">
 			<div class="wrap">
-				<div class="page-navigation-top">
+				<div class="header-content">
 					<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-					<p class="phone-number">
+					<p class="phone">
 						<span>+7(812) 555-05-05</span>
 						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 					</p>
-					<ul class="user-login-list">
+					<ul class="user-login user-login-hidden">
 						<li class="user-login-item">
 							<a href="#">Войти</a>
 						</li>
@@ -41,36 +42,52 @@
 							<a href="#">Регистрация</a>
 						</li>
 					</ul>
+					<div class="account account-hidden">
+						<p class="account-name">
+							Равшан Джамшутович
+							<button type="button" class="account-exit">Выйти</button>
+						</p>
+						<ul class="account-breadcrumbs">
+							<li>
+								<a href="#">Мои заказы</a>
+							</li>
+							<li>
+								<a href="#">Личный кабинет</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<nav class="main-nav">
-					<ul class="main-nav-list">
-						<li class="main-nav-item">
+				<nav class="main-menu">
+					<ul class="main-menu-list">
+						<li class="main-menu-item">
 							<a href="#">Главная</a>
 						</li>
-						<li class="main-nav-item">
+						<li class="main-menu-item">
 							<a href="#">Копмания</a>
 						</li>
-						<li class="main-nav-item">
+						<li class="main-menu-item-active">
 							<a href="catalog.html">Каталог</a>
 						</li>
-						<li class="main-nav-item">
+						<li class="main-menu-item">
 							<a href="#">Новости</a>
 						</li>
-						<li class="main-nav-item">
+						<li class="main-menu-item">
 							<a href="#">Спецпредложения</a>
 						</li>
-						<li class="main-nav-item">
+						<li class="main-menu-item">
 							<a href="#">Доставка</a>
 						</li>
-						<li class="main-nav-item">
+						<li class="main-menu-item">
 							<a href="#">Контакты</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</section>
+	</header>
+	<main class="main-content">
 		<!-- СЕКЦИЯ ПРОДУКЦИЯ И СКИДКА -->
-		<section class="product">
+		<section class="product-discount-slider">
 			<div class="wrap">
 				<h2 class="visually-hidden">Продукты и усулуги интерент-магазина</h2>
 				<div class="product">
@@ -91,8 +108,8 @@
 				</div>
 				<div class="discount">
 					<div class="slider-catalog">
-						<input type="radio" name="toggle" id="slider-catalog-button-1" checked>
-						<input type="radio" name="toggle" id="slider-catalog-button-2">
+						<input type="radio" name="catalog-toggle" id="slider-catalog-button-1" checked>
+						<input type="radio" name="catalog-toggle" id="slider-catalog-button-2">
 						<div class="slider-catalog-controls">
 							<label for="slider-catalog-button-1"></label>
 							<label for="slider-catalog-button-2"></label>
@@ -100,7 +117,7 @@
 						<div class="slider-catalog-inner">
 							<div class="slider-catalog-slides">
 								<div class="catalog-slides-1">
-									<!-- я так понимаю картинка должна быть в background, а не img. незнаю толи div толи ul, решил div -->
+									<!-- я так понимаю картинка должна быть в background, а не img, изображение не контентное вроде. незнаю или div или ul, решил div, т.к. в примерах разметки слайдера div-->
 									<h3>
 										<b>Перфораторы</b>
 									</h3>
@@ -133,42 +150,80 @@
 		<!-- ПОПУЛЯРНЫЕ ТОВАРЫ -->
 		<section class="goods">
 			<div class="wrap">
-				<div class="goods-title">
+				<div class="goods-caption">
 					<h2>Популярные товары:</h2>
 					<a href="#" class="btn button-goods">Все популярные товары</a>
 				</div>
-				<ul class="goods-list">
-					<li class="goods-list">
+				<ul class="perforators-model-list">
+					<li class="perforators-model-item">
+						<!-- есть подозрение, что на h3 надо ссылку, на ссылку потом надо будет hoover вешать что бы появлялось купить и в закладки -->
 						<h3>Перфоратор BOSCH BFG 9000</h3>
-						<img src="#" alt="Перфоратор BOSCH BFG 9000">
-						<p>
+						<a href="#">
+							<img src="#" alt="Перфоратор BOSCH BFG 9000">
+						</a>
+						<p class="old-price price-hidden">
 							<del>32500 р.</del>
 						</p>
 						<p>25500 р.</p>
-					</li>
-					<li class="goods-list">
-						<h3>Перфоратор BOSCH BFG 3000</h3>
-						<img src="#" alt="BOSCH BFG 3000">
 						<p>
+							<button type="button" class="btn button-goods-buy">Купить</button>
+							<button type="button" class="btn button-bookmarks">В закладки</button>
+						</p>
+						<!-- метку NEW как разметить не знаю. псевдокласс на li вешать, такие метки я так понимаю надо JS вешать -->
+						<p class="tag-new new-hidden">
+							new
+						</p>
+					</li>
+					<li class="perforators-model-item">
+						<h3>Перфоратор BOSCH BFG 3000</h3>
+						<a href="#">
+							<img src="#" alt="BOSCH BFG 3000">
+						</a>
+						<p class="old-price price-hidden">
 							<del>22500 р.</del>
 						</p>
 						<p>15500 р.</p>
-					</li>
-					<li class="goods-list">
-						<h3>Перфоратор BOSCH BFG 6000</h3>
-						<img src="#" alt="BOSCH BFG 6000">
 						<p>
+							<button type="button" class="btn button-goods-buy">Купить</button>
+							<button type="button" class="btn button-bookmarks">В закладки</button>
+						</p>
+						<p class="tag-new new-hidden">
+							new
+						</p>
+					</li>
+					<li class="perforators-model-item">
+						<h3>Перфоратор BOSCH BFG 6000</h3>
+						<a href="#">
+							<img src="#" alt="BOSCH BFG 6000">
+						</a>
+						<p class="old-price price-hidden">
 							<del>30500 р.</del>
 						</p>
 						<p>25500 р.</p>
+						<p>
+							<button type="button" class="btn button-goods-buy">Купить</button>
+							<button type="button" class="btn button-bookmarks">В закладки</button>
+						</p>
+						<p class="tag-new new-hidden">
+							new
+						</p>
 					</li>
-					<li class="goods-list">
+					<li class="perforators-model-item">
 						<h3>BOSCH BFG 2000</h3>
-						<img src="#" alt="BOSCH BFG 2000">
-						<p class="price-hidden">
-							<del>12500 р.</del>
+						<a href="#">
+								<img src="#" alt="BOSCH BFG 2000">
+						</a>
+						<p class="old-price price-hidden">
+							
 						</p>
 						<p>12500 р.</p>
+						<p>
+							<button type="button" class="btn button-goods-buy">Купить</button>
+							<button type="button" class="btn button-bookmarks">В закладки</button>
+						</p>
+						<p class="tag-new new-hidden">
+							new
+						</p>
 					</li>
 				</ul>
 			</div>
@@ -176,7 +231,7 @@
 		<!-- ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ -->
 		<section class="maker">
 			<div class="wrap">
-				<div class="maker-title">
+				<div class="maker-caption">
 					<h2>Популярные производители:</h2>
 					<a href="#" class="btn button-maker">Все производители</a>
 				</div>
@@ -235,10 +290,9 @@
 					</p>
 				</div>
 				<div class="slider-service">
-					<input type="radio" name="toggle" id="slider-service-button-1" checked>
-					<!-- name="toggle" можно такой же или нужны разные  -->
-					<input type="radio" name="toggle" id="slider-service-button-2">
-					<input type="radio" name="toggle" id="slider-service-button-3">
+					<input type="radio" name="service-toggle" id="slider-service-button-1" checked>
+					<input type="radio" name="service-toggle" id="slider-service-button-2">
+					<input type="radio" name="service-toggle" id="slider-service-button-3">
 					<div class="service-catalog-controls">
 						<label for="slider-service-button-1">Доставка</label>
 						<label for="slider-service-button-2">Гарантия</label>
@@ -278,11 +332,10 @@
 		</section>
 		<!-- О НАС -->
 		<section class="about-us">
-			<h2 class="visually-hidden">О нас</h2>
 			<div class="wrap">
 				<div class="company">
-					<h3>Компания "Техномарт</h3>
-					<p class="buy">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта строительства не оставит равнодушными
+					<h2>Компания "Техномарт</h2>
+					<p class="purchases">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта строительства не оставит равнодушными
 						любителей сэкономить на гастарбайтерах</p>
 					<p class="transportation">
 						Мы можем доставить ваш товар в самые отдельные точки России! Техномарт работает мо многими траснпортными компаниями:
@@ -295,7 +348,7 @@
 					<a href="#" class="btn button-company">Подробнее о компании</a>
 				</div>
 				<div class="contacts">
-					<h3>Контакты</h3>
+					<h2>Контакты</h2>
 					<p>
 						Вы можете забрать товар сами, заехав в наш офис:
 					</p>
@@ -317,8 +370,8 @@
 					<input type="email" id="mail" name="mail" placeholder="Для отправки ответа" required>
 				</p>
 				<p class="message-field">
-					<label for="message">Текст письма:</label>
-					<textarea name="message" id="message" placeholder="В свободной форме" required></textarea>
+					<label for="field-text">Текст письма:</label>
+					<textarea name="field-text" id="field-text" placeholder="В свободной форме" required></textarea>
 				</p>
 				<button type="submit" class="btn button-message-submit">Отправить</button>
 				<button type="button" class="btn button-message-close">Закрыть</button>
@@ -329,22 +382,22 @@
 	<footer class="main-footer">
 		<div class="wrap">
 			<div class="footer-top">
-				<nav class="footer-nav">
-					<p class="page-footer-title">Техномарт</p>
-					<ul class="main-nav-list">
-						<li class="footer-nav-item">
+				<nav class="footer-menu">
+					<a class="footer-caption">Техномарт</a>
+					<ul class="footer-menu">
+						<li class="footer-menu-item">
 							<a href="#">Копмания</a>
 						</li>
-						<li class="footer-nav-item">
+						<li class="footer-menu-item">
 							<a href="#">Новости</a>
 						</li>
-						<li class="footer-nav-item">
+						<li class="footer-menu-item">
 							<a href="catalog.html">Каталог</a>
 						</li>
-						<li class="footer-nav-item">
+						<li class="footer-menu-item">
 							<a href="#">Доставка</a>
 						</li>
-						<li class="footer-nav-item">
+						<li class="footer-menu-item">
 							<a href="#">Контакты</a>
 						</li>
 					</ul>
@@ -353,17 +406,17 @@
 					<p>
 						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
 					</p>
-					<ul class="footer-content-catalog">
-						<li class="footer-content-catalog-item">
+					<ul class="footer-catalog-navigation">
+						<li class="footer-catalog-item">
 							<a href="#">Материалы</a>
 						</li>
-						<li class="footer-content-catalog-item">
+						<li class="footer-catalog-item">
 							<a href="#">Техника</a>
 						</li>
-						<li class="footer-content-catalog-item">
+						<li class="footer-catalog-item">
 							<a href="#">Инструмент</a>
 						</li>
-						<li class="footer-content-catalog-item">
+						<li class="footer-catalog-item">
 							<a href="#">Спецпредложения</a>
 						</li>
 					</ul>
@@ -371,9 +424,9 @@
 			</div>
 			<div class="footer-bottom">
 				<p class="copyright">
-					2010-2017 Комапания "Техномарт" Все права защищены
+					&copy; 2010-2017 Комапания "Техномарт" Все права защищены
 				</p>
-				<ul class="socials-list">
+				<ul class="socials">
 					<li class="socials-item">
 						<a href="#">Вконтакте</a>
 					</li>
@@ -384,13 +437,12 @@
 						<a href="#">Instagram</a>
 					</li>
 				</ul>
-				<p class="email">
+				<p class="feedback-email">
 					Обратная связь:
 					<span>mail@htmlacademy.ru</span>
 				</p>
-
 				<p class="design">
-					Разработано
+					Разработано -
 					<a href="htmlacademy.ru/intensive/htmlcss">htmlcademy.ru</a>
 				</p>
 			</div>
