@@ -1,0 +1,496 @@
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color:#ffffff;
+
+	font-family: 'Cuprum', sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.wrap {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: #000000;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.account-hidden,
+.user-login-hidden {
+	display: none; /* в каталоге не скрывает меню?!*/
+}
+
+/*--- ШАПКА ---*/
+
+/*--- ВВЕРХ ---*/
+.header-top {
+	width: 100%;
+	height: 42px;
+	background-color: #293449;
+}
+
+.main-header-caption {
+	width: 220px;
+	height: 47px;
+	background-color: #ee3643;
+	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24); /* в IE нет тени */
+	font-size: 24px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.search-field {
+  width: 270px;
+  border: none;
+  outline: none;
+  padding: 0;
+  padding-left: 49px;
+  background-image: url(../img/icon-search.png);
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
+}
+
+.search-field,
+.buttom-header-bookmarks,
+.buttom-header-basket,
+.buttom-header-order {
+  height: 42px;
+  background-color: #293449;
+  font-size: 17px;
+	line-height: 18px;
+  color: #ffffff;
+}
+
+
+.buttom-header-bookmarks,
+.buttom-header-basket,
+.buttom-header-order {
+  padding-top: 12px;
+}
+
+.search-field::placeholder {
+  color: #ffffff;
+}
+
+.search-field::-moz-placeholder {
+	font-size: 17px;
+  color: #ffffff;
+  padding-top: 12px;
+  opacity: 1;
+}
+
+.search-field:-moz-placeholder {
+	font-size: 17px;
+  color: #ffffff;
+  padding-top: 12px;
+  opacity: 1;
+}
+
+
+.search-field::-webkit-input-placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  padding-top: 12px;
+}
+
+.search-field:-ms-input-placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.buttom-header-bookmarks,
+.buttom-header-basket,
+.buttom-header-order {
+  position: relative;
+  width: 150px;
+}
+.buttom-header-bookmarks {
+	padding-left: 44px;
+}
+
+.buttom-header-basket {
+	padding-left: 50px;
+}
+
+.buttom-header-basket-active {
+  background-color: #ee3643;
+}
+
+.buttom-header-order {
+	padding-left: 20px;
+  background-color: #63a63e;
+}
+
+
+.buttom-header-bookmarks::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 16px;
+  background-image: url(../img/icon-bookmark.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  left: 16px;
+}
+
+.buttom-header-basket::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icon-cart.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  left: 18px;
+}
+
+
+/* НАВЕДЕНИЕ КЛИК ФОКУС ВЕРХНЯЯ СЕКЦИЯ */
+
+.main-header-caption:hover {
+  background-color: #ca2c37;
+}
+
+.search-field:hover {
+  background-color: #212a3a;
+  background-image: url(../img/icon-search-white.png);
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
+}
+
+
+.buttom-header-bookmarks:hover::before,
+.buttom-header-basket:hover::before {
+  opacity: 1;
+}
+
+.buttom-header-order:hover {
+  background-color: #5fbb2d;
+}
+
+.main-header-caption:active {
+  background-color: #ba2732;
+}
+
+.buttom-header-bookmarks:active,
+.buttom-header-basket:active,
+.buttom-header-order:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.buttom-header-bookmarks:active::before,
+.buttom-header-basket:active::before {
+  opacity: 0.5;
+}
+
+
+.buttom-header-order:active {
+  background-color: #518534;
+}
+
+.search-field:focus {
+  outline: none;
+  background-color: #ffffff;
+  color: #000000;
+  background-image: url(../img/icon-search-red.png);
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
+}
+
+
+/*--- КОНТЕНТ ШАПКИ ---*/
+
+.main-header-navigation {
+  background-color: #f3f7f9;
+  padding-bottom: 60px;
+}
+
+.header-content {
+  height: 159px;
+}
+h1 {
+  width: 196px;
+  font-size: 15px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+  margin:0 52px;
+  padding-top: 50px;
+}
+
+.header-contacts {
+  width: 300px;
+  margin-top: 46px;
+}
+
+.header-contacts a {
+  position: relative;
+  width: 270px;
+  height: 45px;
+	font-family: Cuprum;
+	font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  border: solid 3px #ffffff;
+  padding-left: 70px;
+  padding-top: 10px;
+}
+
+.header-contacts a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  left: 13px;
+}
+
+.header-contacts p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+  margin:0;
+  padding-top: 4px;
+  padding-left: 10px;
+}
+
+.user-login,
+.account {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 300px;
+  margin-top: 44px;
+}
+
+.account {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.user-entry,
+.user-registration,
+.account-iner {
+	font-size: 21px;
+	line-height: 21px;
+	background-color: #ffffff;
+	padding-top: 14px;
+}
+
+.user-entry {
+	width: 121px;
+  height: 45px;
+  margin-right: 10px;
+	padding-left: 46px;
+}
+
+.user-entry::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/icon-login.svg);
+  background-repeat: no-repeat;
+  left: 32px;
+  top: 16px;
+  opacity: 0.3;
+}
+
+.user-registration {
+	width: 150px;
+	height: 45px;
+	text-align: center;
+}
+
+.account-iner {
+  width: 300px;
+  min-height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+}
+
+.account-name {
+  width: 240px;
+  margin: 0;
+  padding-left: 47px;
+
+}
+
+.account-name::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 18px;
+  background-image: url(../img/icon-user.svg);
+  background-repeat: no-repeat;
+  left: 16px;
+}
+
+.account-exit {
+  width: 20px;
+  height: 17px;
+  margin-right: 10px;
+  background-image: url(../img/icon-logout.svg);
+  background-repeat: no-repeat;
+}
+
+.account-breadcrumbs {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+  height: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  margin-top: 10px;
+  margin-left: 18px;
+}
+
+.account-breadcrumbs li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
+  left: 90px;
+  top: 6px;
+}
+
+.account-breadcrumbs a {
+  text-decoration: underline;
+}
+
+/* НАВЕДЕНИЕ КЛИК КОНТЕНТ СЕКЦИЯ */
+
+.user-entry:hover a,
+.user-registration a:hover {
+  color: #ee3643;
+}
+
+.user-entry:hover::before {
+  background-image: url(../img/icon-login-hover.png);
+  opacity: 1;
+}
+
+
+.account-name:hover::before {
+  background-image: url(../img/icon-user-hover.png);
+}
+
+.account-exit:hover {
+  background-image: url(../img/icon-logout-hover.png);
+}
+
+.account-breadcrumbs a:hover {
+  color: #ee3643;
+}
+
+.user-entry:active a,
+.user-registration a:active {
+  opacity: 0.3;
+  color: #000000;
+}
+
+.user-entry:active::before {
+  background-image: url(../img/icon-login.svg);
+}
+
+.account-name:active {
+  opacity: 0.3;
+}
+
+.account-name:active::before {
+  opacity: 0.3;
+}
+
+.account-exit:active {
+  opacity: 0.3;
+}
+
+.account-breadcrumbs a:active {
+  opacity: 0.3;
+  color: #000000;
+}
+
+
+/*--- МЕНЮ НАВИГАЦИИ ---*/
+
+.main-menu {
+  background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.main-menu-list {
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-menu-item a {
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 31px;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  padding-top: 19px;
+}
+
+/* НАВЕДЕНИЕ КЛИК МЕНЮ */
+
+.main-menu-item:hover {
+  background-color: #293449;
+}
+
+.main-menu-item:active {
+  background-color: #1d2739;
+}
+
+.main-menu-item a:active {
+  opacity: 0.5;
+}
+
+
+/* MAIN*/
