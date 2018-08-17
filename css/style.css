@@ -36,10 +36,13 @@ ul {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .account-hidden,
@@ -72,7 +75,6 @@ ul {
   width: 270px;
   border: none;
   outline: none;
-  padding: 0;
   padding-left: 49px;
   background-image: url(../img/icon-search.png);
   background-repeat: no-repeat;
@@ -340,12 +342,10 @@ h1 {
 }
 
 .account-iner {
-  width: 300px;
   min-height: 45px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-top: 0;
+  padding-top: 6px;
 }
 
 .account-name {
@@ -366,12 +366,16 @@ h1 {
   left: 16px;
 }
 
-.account-exit {
+.account-exit::after {
+  content: "";
+  position: absolute;
+  display: block;
   width: 20px;
   height: 17px;
-  margin-right: 10px;
   background-image: url(../img/icon-logout.svg);
   background-repeat: no-repeat;
+  top: 16px;
+  right: 10px;
 }
 
 .account-breadcrumbs {
@@ -420,7 +424,7 @@ h1 {
   background-image: url(../img/icon-user-hover.png);
 }
 
-.account-exit:hover {
+.account-exit:hover::after {
   background-image: url(../img/icon-logout-hover.png);
 }
 
@@ -446,7 +450,7 @@ h1 {
   opacity: 0.3;
 }
 
-.account-exit:active {
+.account-exit:active::after {
   opacity: 0.3;
 }
 
