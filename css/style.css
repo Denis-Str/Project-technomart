@@ -20,7 +20,6 @@ body {
 	width: 940px;
 	margin: 0 auto;
 	display: flex;
-	justify-content: space-between;
 }
 
 a {
@@ -31,7 +30,8 @@ a {
 
 ul {
 	list-style: none;
-	padding: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -470,6 +470,7 @@ h1 {
 .main-menu-list {
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-menu-item a {
@@ -498,3 +499,178 @@ h1 {
 
 
 /* MAIN*/
+
+.main-content {
+  position: relative;
+}
+
+.product-discount-slider {
+  flex-direction: column;
+  margin-top: 59px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product-item,
+.discount-item {outline: 1px solid red;
+  width: 300px;
+  height: 123px;
+
+}
+
+.discount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 53px;
+
+}
+
+.discount-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slider-catalog {outline: 1px solid red;
+  width: 620px;
+  height: 266px;
+}
+
+.goods,
+.maker {
+  flex-direction: column;
+}
+
+.goods-caption,
+.maker-caption {outline: 1px solid red;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 89px; /* после стилизации удалить*/
+}
+
+.perforators-model-list,
+.maker-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.perforators-model-item {outline: 1px solid red;
+  width: 220px;
+  height: 318px;
+  margin-bottom: 20px;
+}
+
+.maker-item {outline: 1px solid red;
+  width: 220px;
+  height: 145px;
+  margin-bottom: 20px;
+}
+
+.maker-item:last-child {
+  margin-bottom: 85px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f8f9;
+}
+
+.service-title {outline: 1px solid red;
+  height: 164px; /* после стилизации удалить*/
+}
+
+.slider-service {outline: 1px solid red;
+  height: 358px; /* после стилизации удалить*/
+}
+
+.about-us {
+  height: 536px; /* после стилизации удалить*/
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company {outline: 1px solid red;
+  width: 540px;
+}
+
+.contacts {outline: 1px solid red;
+  width: 300px;
+}
+
+.message-form {
+  visibility: hidden;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  width: 620px;
+  height: 430px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 193px;/* после стилизации удалить*/
+}
+
+.footer-bottom {
+  height: 107px;/* после стилизации удалить*/
+}
+
+.footer-menu,
+.footer-content {
+  display: flex;
+}
+
+.footer-bottom,
+.footer-content {outline: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-catalog-navigation {
+  display: flex;
+}
+
+.footer-menu {outline: 1px solid red;
+
+}
+
+.footer-content {outline: 1px solid red;
+
+}
+
+
+/*--- КАТАЛОГ ---*/
+.popup-order {
+  visibility: hidden;
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 620px;
+  height: 282px;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+}

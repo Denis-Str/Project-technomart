@@ -84,30 +84,28 @@
         <li class="main-menu-item">
           <a href="#">Контакты</a>
         </li>
+
       </ul>
     </nav>
 		</section>
 	</header>
 	<main class="main-content">
-    <div class="wrap">
-      <section class="product-discount-slider">
+      <section class="product-discount-slider wrap">
         <h2 class="visually-hidden">Продукты и усулуги интерент-магазина</h2>
-        <!-- <div class="product"> -->
-          <ul class="product-list">
-            <li class="product-item">
-              <h3>Материалы</h3>
-              <a href="#">На любой вкус</a>
-            </li>
-            <li class="product-item">
-              <h3>Инструмент</h3>
-              <a href="#">На все случаи</a>
-            </li>
-            <li class="product-item">
-              <h3>Техника</h3>
-              <a href="#">Для стройки</a>
-            </li>
-          </ul>
-        <!-- </div> -->
+        <ul class="product-list">
+          <li class="product-item">
+            <h3>Материалы</h3>
+            <a href="#">На любой вкус</a>
+          </li>
+          <li class="product-item">
+            <h3>Инструмент</h3>
+            <a href="#">На все случаи</a>
+          </li>
+          <li class="product-item">
+            <h3>Техника</h3>
+            <a href="#">Для стройки</a>
+          </li>
+        </ul>
         <div class="discount">
           <div class="slider-catalog">
             <input type="radio" name="catalog-toggle" id="slider-catalog-button-1" checked>
@@ -147,7 +145,7 @@
           </ul>
         </div>
       </section>
-      <section class="goods">
+      <section class="goods wrap">
         <div class="goods-caption">
           <h2>Популярные товары:</h2>
           <a href="#" class="btn button-goods">Все популярные товары</a>
@@ -211,7 +209,7 @@
           </li>
         </ul>
       </section>
-      <section class="maker">
+      <section class="maker wrap">
         <div class="maker-caption">
           <h2>Популярные производители:</h2>
           <a href="#" class="btn button-maker">Все производители</a>
@@ -259,16 +257,15 @@
           </li>
         </ul>
       </section>
-    </div>
 		<section class="service">
-			<div class="wrap">
-				<div class="service-title">
+
+				<div class="service-title wrap">
 					<h2>Сервисы</h2>
 					<p>
             Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 					</p>
 				</div>
-				<div class="slider-service">
+				<div class="slider-service wrap">
 					<input type="radio" name="service-toggle" id="slider-service-button-1" checked>
 					<input type="radio" name="service-toggle" id="slider-service-button-2">
 					<input type="radio" name="service-toggle" id="slider-service-button-3">
@@ -304,56 +301,53 @@
 						</div>
 					</div>
 				</div>
-			</div>
+
 		</section>
-		<section class="about-us">
-			<div class="wrap">
-				<div class="company">
-					<h2>Компания "Техномарт</h2>
-					<p class="purchases">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта строительства не оставит равнодушными
-						любителей сэкономить на гастарбайтерах</p>
-					<p class="transportation">
-						Мы можем доставить ваш товар в самые отдельные точки России! Техномарт работает мо многими траснпортными компаниями:
-					</p>
-					<ul class="company-list">
-						<li class="company-item">Деловые линиии</li>
-						<li class="company-item">Автотрейдинг</li>
-						<li class="company-item">ЖелДорЭкспедиция</li>
-					</ul>
-					<a href="#" class="btn button-company">Подробнее о компании</a>
-				</div>
-				<div class="contacts">
-					<h2>Контакты</h2>
-					<p>
-						Вы можете забрать товар сами, заехав в наш офис:
-					</p>
-					<img src="./img/mini-map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-					<a href="#" class="btn button-company">Заблудились? Напишите нам</a>
-				</div>
-			</div>
-			<div class="map-popup">
-				<button type="button" class="popup-map-close">Закрыть</button>
-			</div>
-			<form action="echo.htmlacademy.ru" method="get" class="message-form">
-				<p class="message-name">
-					<label for="name">Ваше имя:</label>
-					<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
-				</p>
-				<p class="message-mail">
-					<label for="mail">Ваш e-mail:</label>
-					<input type="email" id="mail" name="mail" placeholder="Для отправки ответа" required>
-				</p>
-				<p class="message-field">
-					<label for="field-text">Текст письма:</label>
-					<textarea name="field-text" id="field-text" placeholder="В свободной форме" required></textarea>
-				</p>
-				<button type="submit" class="btn button-message-submit">Отправить</button>
-				<button type="button" class="btn button-message-close">Закрыть</button>
-			</form>
+		<section class="about-us wrap">
+      <div class="company">
+        <h2>Компания "Техномарт</h2>
+        <p class="purchases">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта строительства не оставит равнодушными
+          любителей сэкономить на гастарбайтерах</p>
+        <p class="transportation">
+          Мы можем доставить ваш товар в самые отдельные точки России! Техномарт работает мо многими траснпортными компаниями:
+        </p>
+        <ul class="company-list">
+          <li class="company-item">Деловые линиии</li>
+          <li class="company-item">Автотрейдинг</li>
+          <li class="company-item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="btn button-company">Подробнее о компании</a>
+      </div>
+      <div class="contacts">
+        <h2>Контакты</h2>
+        <p>
+          Вы можете забрать товар сами, заехав в наш офис:
+        </p>
+        <img src="./img/mini-map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <a href="#" class="btn button-company">Заблудились? Напишите нам</a>
+        <p class="popup-map">
+          <button type="button" class="popup-map-close">Закрыть</button>
+        </p>
+      </div>
+    <form action="echo.htmlacademy.ru" method="get" class="message-form">
+      <p class="message-name">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
+      </p>
+      <p class="message-mail">
+        <label for="mail">Ваш e-mail:</label>
+        <input type="email" id="mail" name="mail" placeholder="Для отправки ответа" required>
+      </p>
+      <p class="message-field">
+        <label for="field-text">Текст письма:</label>
+        <textarea name="field-text" id="field-text" placeholder="В свободной форме" required></textarea>
+      </p>
+      <button type="submit" class="btn button-message-submit">Отправить</button>
+      <button type="button" class="btn button-message-close">Закрыть</button>
+    </form>
 		</section>
 	</main>
-	<footer class="main-footer">
-		<div class="wrap">
+	<footer class="main-footer wrap">
 			<div class="footer-top">
 				<nav class="footer-menu">
 					<a class="footer-caption">Техномарт</a>
@@ -424,7 +418,6 @@
           <a href="htmlacademy.ru/intensive/htmlcss">htmlcademy.ru</a>
         </div>
 			</div>
-		</div>
 	</footer>
 </body>
 </html>
