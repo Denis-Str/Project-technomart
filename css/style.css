@@ -65,7 +65,7 @@ a {
   text-transform: uppercase;
 }
 
- .button:hover {
+.button:hover {
   background-color: #ca2c37;
 }
 
@@ -77,7 +77,7 @@ a {
 .model-item-finalize,
 .popup-order,
 .popup-map,
-.message-form  {
+.message-form {
   visibility: hidden;
 }
 
@@ -217,10 +217,7 @@ a {
   left: 16px;
 }
 
-.button-goods
-
-
-.buttom-header-basket::before,
+.button-goods .buttom-header-basket::before,
 .button-goods-buy::before {
   content: "";
   position: absolute;
@@ -1683,6 +1680,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
 }
+
 /* breadcrumbs-nav-list */
 
 .breadcrumbs-nav-list,
@@ -1721,7 +1719,6 @@ a {
   height: 12px;
   background-image: url(../img/icon-home.svg);
   background-repeat: no-repeat;
-
 }
 
 .breadcrumbs-nav-item:not(:last-child)::after {
@@ -1739,7 +1736,6 @@ a {
   top: 22px;
 }
 
-
 .breadcrumbs-nav-item:nth-child(1) {
   margin-right: 54px;
 }
@@ -1747,7 +1743,6 @@ a {
 .breadcrumbs-nav-item:nth-child(1)::after {
   left: 29px;
 }
-
 
 .breadcrumbs-nav-item:nth-child(2) {
   margin-right: 40px;
@@ -1788,11 +1783,13 @@ a {
 }
 
 /* perforators-list */
+
 .perforators-sort,
 .filtr-caption {
   background-color: #f7f3ec;
   height: 38px;
   padding-top: 8px;
+  border-radius: 3px;
 }
 
 .filtr-caption,
@@ -1813,7 +1810,6 @@ a {
   border: none;
   margin: 0;
   padding: 0;
-
 }
 
 .filtr-price legend,
@@ -1872,6 +1868,7 @@ a {
   width: 220px;
   height: 80px;
   background-color: #f7f3ec;
+  border-radius: 5px;
   padding-top: 32px;
   padding-left: 20px;
 }
@@ -1883,11 +1880,11 @@ a {
 }
 
 .price-min input[type="number"],
-.price-max input[type="number"]{
+.price-max input[type="number"] {
   width: 95px;
   height: 38px;
-
   background-color: #f7f3ec;
+  border-radius: 5px;
   border: none;
   text-align: center;
   font-size: 17px;
@@ -1930,7 +1927,7 @@ a {
 
 .filtr-maker-item label,
 .filtr-power-item label {
- cursor: pointer;
+  cursor: pointer;
 }
 
 .filtr-maker-item label::before,
@@ -1957,26 +1954,26 @@ a {
 
 /* hover checked form  */
 
-#bosch:hover ~ label[for="bosch"]::before,
-#interskov:hover ~ label[for="interskov"]::before,
-#makita:hover ~ label[for="makita"]::before,
-#dewalt:hover ~ label[for="dewalt"]::before,
-#bosch:hover ~ label[for="bosch"]::before,
-#hitachi:hover ~ label[for="hitachi"]::before {
+#bosch:hover~label[for="bosch"]::before,
+#interskov:hover~label[for="interskov"]::before,
+#makita:hover~label[for="makita"]::before,
+#dewalt:hover~label[for="dewalt"]::before,
+#bosch:hover~label[for="bosch"]::before,
+#hitachi:hover~label[for="hitachi"]::before {
   opacity: 0.5;
 }
 
-#accumulator:hover ~ label[for="accumulator"]::before,
-#volts:hover ~ label[for="volts"]::before {
+#accumulator:hover~label[for="accumulator"]::before,
+#volts:hover~label[for="volts"]::before {
   opacity: 0.5;
 }
 
-#bosch:checked ~ label[for="bosch"]::before,
-#interskov:checked ~ label[for="interskov"]::before,
-#makita:checked ~ label[for="makita"]::before,
-#dewalt:checked ~ label[for="dewalt"]::before,
-#bosch:checked ~ label[for="bosch"]::before,
-#hitachi:checked ~ label[for="hitachi"]::before {
+#bosch:checked~label[for="bosch"]::before,
+#interskov:checked~label[for="interskov"]::before,
+#makita:checked~label[for="makita"]::before,
+#dewalt:checked~label[for="dewalt"]::before,
+#bosch:checked~label[for="bosch"]::before,
+#hitachi:checked~label[for="hitachi"]::before {
   width: 27px;
   height: 23px;
   background-image: url(../img/checkbox-on.svg);
@@ -1984,8 +1981,8 @@ a {
   opacity: 1;
 }
 
-#accumulator:checked ~ label[for="accumulator"]::before,
-#volts:checked ~ label[for="volts"]::before {
+#accumulator:checked~label[for="accumulator"]::before,
+#volts:checked~label[for="volts"]::before {
   background-image: url(../img/radio-on.svg);
   opacity: 1;
 }
@@ -1998,8 +1995,8 @@ a {
 }
 
 .perforators-sort p {
- width: 140px;
- margin-right: 100px;
+  width: 140px;
+  margin-right: 100px;
 }
 
 .sort-list {
@@ -2009,7 +2006,7 @@ a {
   margin-right: 45px;
 }
 
-.sort-item a{
+.sort-item a {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
 }
@@ -2032,7 +2029,8 @@ a {
   content: "";
   display: block;
   position: absolute;
-  width: 0; height: 0;
+  width: 0;
+  height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 11px solid rgba(0, 0, 0, 0.3);
@@ -2072,7 +2070,6 @@ a {
 .perforators-breadcrumbs-list {
   display: flex;
   margin-bottom: 60px;
-
 }
 
 .perforators-breadcrumbs-item a {
@@ -2085,7 +2082,7 @@ a {
   padding-top: 10px;
 }
 
-.perforators-breadcrumbs-item .perforators-breadcrumbs-next  {
+.perforators-breadcrumbs-item .perforators-breadcrumbs-next {
   width: 140px;
   height: 38px;
 }
@@ -2113,8 +2110,7 @@ a {
   width: 620px;
   height: 282px;
   background-color: #ffffff;
-  box-shadow: inset 0px 5px 0 0 #ee3643,
-              0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 5px 0 0 #ee3643, 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .popup-order p {
@@ -2165,13 +2161,6 @@ a {
   text-align: center;
   padding-top: 12px;
 }
-
-
-
-
-
-
-
 
 .popup-order-close {
   position: absolute;
