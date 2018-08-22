@@ -108,20 +108,20 @@
 			<div class="wrap-inner-catalog">
 				<div class="perforators-filtr">
 					<form action="echo.htmlacademy.ru" method="get">
-						<p>Фильтр:</p>
+						<p class="filtr-caption">Фильтр:</p>
 						<fieldset class="filtr-price">
 							<legend>Цена:</legend>
-							<p class="filtr-price">
-								<input name="filtr-price" type="range" id="filtr-price" min="0" max="50000" value="0" step="100">
-							</p>
-							<p class="price-result filtr-price-min">
-								0
-								<output name="price-min" for="price-min"></output>
-							</p>
-							<p class="price-result filtr-price-max">
-								30000
-								<output name="price-max" for="price-max"></output>
-							</p>
+							<p class="filtr-price-togge">
+								<input name="filtr-price-togge" type="range" id="filtr-price-togge" min="0" max="40000" value="0" step="100" aria-label="Цена">
+              </p>
+              <div class="price-inner">
+                <p class="price-min">
+                  <input type="number" name="price-min" value="0" aria-label="минималаня цена">
+                </p>
+                <p class="price-max">
+                  <input type="number" name="price-max" value="30000" aria-label="максимальная цена">
+                </p>
+              </div>
 						</fieldset>
 						<fieldset class="filtr-maker">
 							<legend>Производители:</legend>
@@ -149,18 +149,19 @@
 							</ul>
 						</fieldset>
 						<fieldset class="filtr-power">
+                <legend>Питание:</legend>
 							<ul class="filtr-power-list list">
 								<li class="filtr-power-item">
 									<input type="radio" name="power" id="accumulator" value="accumulator" checked>
 									<label for="accumulator">Аккумуляторные</label>
 								</li>
 								<li class="filtr-power-item">
-									<input type="radio" name="power" id="220volts" value="220volts">
-									<label for="220volts">Сетевые</label>
+									<input type="radio" name="power" id="volts" value="volts">
+									<label for="volts">Сетевые</label>
 								</li>
 							</ul>
 						</fieldset>
-						<button type="submit" class=" button-filtr-submit">Показать</button>
+						<button type="submit" class="button-filtr-submit">Показать</button>
 					</form>
 				</div>
 				<div class="perforators-list list">
@@ -311,7 +312,7 @@
 						</li>
 					</ul>
 					<ul class="perforators-breadcrumbs-list list">
-						<li class="perforators-breadcrumbs-item">
+						<li class="perforators-breadcrumbs-item perforators-breadcrumbs-active">
 							<a>1</a>
 						</li>
 						<li class="perforators-breadcrumbs-item">
@@ -320,12 +321,24 @@
 						<li class="perforators-breadcrumbs-item">
 							<a href="#">3</a>
 						</li>
-						<li class="perforators-breadcrumbs-item perforators-breadcrumbs-next">
-							<a href="#">Следующая</a>
+						<li class="perforators-breadcrumbs-item">
+							<a href="#" class="perforators-breadcrumbs-next">Следующая</a>
 						</li>
 					</ul>
 				</div>
+      </div>
+      <div class="popup-order">
+        <p>
+          Товар добавлен в корзину!
+        </p>
+			<div class="popup-order-inner">
+				<button type="submit" class="button button-popup-order-process">Оформить заказ</button>
+				<a href="#" class="button button-popup-order-resume">Продолжить покупки</a>
 			</div>
+			<button type="button" class="close popup-order-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+		  </div>
 		</section>
 		<div class="about-perforator">
 			<div class="wrap">
@@ -341,16 +354,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="popup-order">
-			<p>
-				Товар добавлен в корзину!
-			</p>
-			<div class="popup-order-inner">
-				<button type="submit" class=" button-popup-order-process">Оформить заказ</button>
-				<a href="#" class=" button-popup-order-resume">Продолжить покупки</a>
-			</div>
-			<button type="button" class="popup-order-close">Закрыть</button>
-		</div>
+
 	</main>
 	<footer class="main-footer">
 		<div class="footer-page">
