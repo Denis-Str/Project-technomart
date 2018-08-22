@@ -29,7 +29,6 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
-  /* 35 и 36 строку можно или нельзя, я так и не понял*/
   color: #000000;
 }
 
@@ -58,19 +57,15 @@ a {
 }
 
 .button {
-  width: 195px;
-  height: 38px;
   border-radius: 3px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #ee3643;
+  background-color: #161d29;
   text-transform: uppercase;
-  padding-top: 12px;
-  text-align: center;
 }
 
-.button:hover {
+ .button:hover {
   background-color: #ca2c37;
 }
 
@@ -221,6 +216,9 @@ a {
   opacity: 0.3;
   left: 16px;
 }
+
+.button-goods
+
 
 .buttom-header-basket::before,
 .button-goods-buy::before {
@@ -882,6 +880,11 @@ a {
   margin-left: 25px;
   margin-top: -62px;
   z-index: 2;
+  width: 195px;
+  height: 38px;
+  background-color: #ee3643;
+  padding-top: 12px;
+  text-align: center;
 }
 
 .slider-catalog-controls::before,
@@ -1004,14 +1007,21 @@ a {
 .maker-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
-/* .perforators-model-item,
+.perforators-model-item,
 .maker-item {
   margin-right: 20px;
 }
- */
+
+.perforators-model-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.maker-item:nth-child(4n) {
+  margin-right: 0;
+}
 
 .maker-list {
   line-height: 0;
@@ -1215,6 +1225,11 @@ a {
 .service-button {
   margin-left: 80px;
   margin-top: 25px;
+  width: 195px;
+  height: 38px;
+  background-color: #ee3643;
+  padding-top: 12px;
+  text-align: center;
 }
 
 /* -- about-us -- */
@@ -1299,11 +1314,20 @@ a {
 
 .button-company {
   width: 220px;
+  width: 195px;
+  height: 38px;
+  background-color: #ee3643;
+  padding-top: 12px;
+  text-align: center;
 }
 
 .button-message {
   width: 100%;
   margin-top: 32px;
+  height: 38px;
+  background-color: #ee3643;
+  padding-top: 12px;
+  text-align: center;
 }
 
 /* pop-up*/
@@ -1420,6 +1444,7 @@ a {
   height: 38px;
   margin-top: 37px;
   padding-top: 0;
+  background-color: #ee3643;
 }
 
 /* почему то у меня placeholder застилизовался без псевдокласса*/
@@ -1646,7 +1671,175 @@ a {
 
 /*============*/
 
-/* В РАЗРАБОТКЕ*/
+.perforators {
+  flex-direction: column;
+
+}
+
+.wrap-inner-catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* breadcrumbs-nav-list */
+
+.breadcrumbs-nav-list,
+.perforators-filtr,
+.perforators-sort,
+.perforators-breadcrumbs-list {
+  font-family: 'PT Sans';
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+
+.perforators-list .perforators-model-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.breadcrumbs-nav-list {
+  position: relative;
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.breadcrumbs-nav-item {
+  margin-top: 20px;
+}
+
+.breadcrumbs-nav-item:first-child::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 12px;
+  background-image: url(../img/icon-home.svg);
+  background-repeat: no-repeat;
+
+}
+
+.breadcrumbs-nav-item:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  background-image: url(../img/icon-right-small.svg);
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-nav-item:first-child::before,
+.breadcrumbs-nav-item:not(:last-child)::after {
+  top: 22px;
+}
+
+
+.breadcrumbs-nav-item:nth-child(1) {
+  margin-right: 54px;
+}
+
+.breadcrumbs-nav-item:nth-child(1)::after {
+  left: 29px;
+}
+
+
+.breadcrumbs-nav-item:nth-child(2) {
+  margin-right: 40px;
+}
+
+.breadcrumbs-nav-item:nth-child(2)::after {
+  left: 123px;
+}
+
+.breadcrumbs-nav-item:nth-child(3) {
+  margin-right: 44px;
+}
+
+.breadcrumbs-nav-item:nth-child(3)::after {
+  left: 243px;
+}
+
+.perforators h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  height: 89px;
+  background-color: #f2f6f8;
+  font-family: 'Cuprum';
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  padding-left: 27px;
+  padding-top: 28px;
+}
+
+.perforators-sort,
+.perforators-filtr p {
+  background-color: #f7f3ec;
+  height: 38px;
+  padding-left: 18px;
+  padding-top: 8px;
+}
+
+.perforators-filtr p,
+.perforators-sort p {
+  margin: 0;
+}
+
+.perforators-sort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.perforators-sort p {outline: 1px solid red;
+ width: 140px;
+}
+
+.sort-list {outline: 1px solid red;
+  width: 390px;
+  display: flex;
+}
+
+.listing-sort {outline: 1px solid red;
+  width: 60px;
+}
+
+.perforators-filtr {
+
+  width: 220px;
+}
+
+.perforators-list {
+
+  width: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.perforators-breadcrumbs-list {
+  display: flex;
+}
+
+
+
+
 
 .popup-order {
   position: absolute;
@@ -1655,41 +1848,4 @@ a {
   width: 620px;
   height: 282px;
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
-}
-
-.perforators {
-  flex-direction: column;
-}
-
-.perforators-filtr {
-  outline: 1px solid red;
-  width: 220px;
-}
-
-.perforators-list {
-  outline: 1px solid red;
-  width: 700px;
-}
-
-.breadcrumbs-nav-list {
-  display: flex;
-  flex-direction: row;
-}
-
-.wrap-inner-catalog {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.perforators-sort {
-  display: flex;
-}
-
-.sort-list {
-  display: flex;
-}
-
-.perforators-breadcrumbs-list {
-  display: flex;
 }
