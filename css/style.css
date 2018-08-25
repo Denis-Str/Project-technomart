@@ -619,6 +619,7 @@ a {
 .discount-item {
   width: 300px;
   height: 123px;
+  padding-top: 20px;
 }
 
 .product-1,
@@ -667,7 +668,6 @@ a {
   font-weight: bold;
   color: #ffffff;
   padding-left: 23px;
-  padding-top: 20px;
 }
 
 .product-item a,
@@ -1578,8 +1578,10 @@ a {
   color: #ffffff;
 }
 
+
 .footer-content .wrap {
   justify-content: flex-start;
+  padding-top: 36px;
 }
 
 .feedback-email p,
@@ -1589,13 +1591,6 @@ a {
 
 .footer-content a {
   color: #ffd180;
-}
-
-.copyright,
-.socials,
-.feedback-email,
-.design {
-  margin-top: 36px;
 }
 
 .copyright {
