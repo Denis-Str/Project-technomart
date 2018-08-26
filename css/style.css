@@ -576,10 +576,14 @@ a {
   position: relative;
 }
 
-.discount-list,
+.product-discount-slider ,
 .goods,
-.maker,
-.product-discount-slider {
+.maker {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.discount-list {
   flex-direction: column;
 }
 
@@ -1016,7 +1020,7 @@ a {
   margin-right: 20px;
 }
 
-.perforators-model-item:nth-child(4n) {
+.goods .perforators-model-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1274,7 +1278,6 @@ a {
 
 .purchases {
   letter-spacing: 0.1px;
-  /* можно так или нет и надоли так, но только так выровнях*/
 }
 
 .transportation {
@@ -1309,7 +1312,6 @@ a {
   background-color: #ee3643;
   left: -35px;
   margin-top: 10px;
-  /*если просто top сделать то то 2 алочки исчезают*/
 }
 
 .button-company {
@@ -1370,7 +1372,6 @@ a {
 }
 
 .mini-map:hover~.popup-map {
-  /* не работает не пойму почему*/
   visibility: visible;
 }
 
@@ -1688,11 +1689,7 @@ a {
   text-transform: uppercase;
 }
 
-.perforators-model-list .perforators-model-item {
-  margin-right: 20px;
-}
-
-.perforators-model-list .perforators-model-item:nth-child(3n) {
+.wrap-inner-catalog .perforators-model-item:nth-child(3n) {
   margin-right: 0;
 }
 
