@@ -1375,10 +1375,6 @@ a {
   cursor: pointer;
 }
 
-.mini-map:hover~.popup-map {
-  visibility: visible;
-}
-
 /* form */
 
 .message-form {
@@ -1451,8 +1447,6 @@ a {
   padding-top: 0;
   background-color: #ee3643;
 }
-
-/* почему то у меня placeholder застилизовался без псевдокласса*/
 
 .message-form-inner input[type="text"],
 .message-form-inner input[type="email"],
