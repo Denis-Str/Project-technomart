@@ -1012,7 +1012,6 @@ a {
 .maker-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
 }
 
 .perforators-model-item,
@@ -1030,6 +1029,7 @@ a {
 
 .maker-list {
   line-height: 0;
+  margin-bottom: 65px;
 }
 
 .maker-item a {
@@ -1198,6 +1198,11 @@ a {
 .service,
 .about-perforator {
   background-color: #f4f8f9;
+
+}
+
+.about-perforator {
+  padding-bottom: 30px;
 }
 
 .service-title,
@@ -1220,7 +1225,7 @@ a {
 .about-perforator-text {
   font-family: 'PT Sans';
   margin-top: 25px;
-  margin-bottom: 70px;
+  margin-bottom: 38px;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.1px;
@@ -1316,7 +1321,6 @@ a {
 
 .button-company {
   width: 220px;
-  width: 195px;
   height: 38px;
   background-color: #ee3643;
   padding-top: 12px;
@@ -1908,8 +1912,9 @@ a {
 }
 
 .button-filtr-submit {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #000000;
   width: 140px;
   height: 38px;
@@ -2012,10 +2017,6 @@ a {
   width: 220px;
 }
 
-.perforators-list {
-  width: 700px;
-}
-
 .button-sort-increase,
 .button-sort-decrease {
   content: "";
@@ -2061,7 +2062,8 @@ a {
 
 .perforators-breadcrumbs-list {
   display: flex;
-  margin-bottom: 60px;
+  margin-top: 32px;
+  margin-bottom: 58px;
 }
 
 .perforators-breadcrumbs-item a {
