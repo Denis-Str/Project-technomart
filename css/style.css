@@ -74,7 +74,8 @@ a {
 }
 
 .price-hidden,
-.model-item-finalize,
+/* .model-item-finalize, */
+
 .popup-order,
 .popup-map,
 .message-form {
@@ -568,7 +569,7 @@ a {
   position: relative;
 }
 
-.product-discount-slider ,
+.product-discount-slider,
 .goods,
 .maker {
   width: 940px;
@@ -1048,6 +1049,7 @@ a {
   width: 220px;
   height: 318px;
   border: 1px solid #eaeaea;
+  cursor: pointer;
 }
 
 .perforators-model-item h3 {
@@ -1058,7 +1060,6 @@ a {
   font-weight: bold;
   width: 160px;
   text-align: center;
-  cursor: pointer;
 }
 
 .old-price,
@@ -1106,9 +1107,16 @@ a {
   width: 218px;
   height: 164px;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.button-goods-buy,
+.button-goods-bookmarks {
+  display: block;
+  margin: 0 auto;
+}
+
+.model-item-finalize {
+  display: none;
   top: 0;
 }
 
@@ -1148,12 +1156,8 @@ a {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-/* hover active --- goods and  */
-
-/*работает странно, не успеваю по кликать на купить и закладки, вешал li  тоже не вышло, я так понимаю ждем JS )*/
-
-.perforators-model-item h3:hover ~ .model-item-finalize {
-  visibility: visible;
+.perforators-model-item:hover .model-item-finalize {
+  display: block;
 }
 
 .maker-item a:hover {
@@ -1186,7 +1190,6 @@ a {
 .service,
 .about-perforator {
   background-color: #f4f8f9;
-
 }
 
 .about-perforator {
@@ -1562,7 +1565,6 @@ a {
   line-height: 18px;
   color: #ffffff;
 }
-
 
 .footer-content .wrap {
   justify-content: flex-start;
