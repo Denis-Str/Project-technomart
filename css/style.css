@@ -208,7 +208,6 @@ a {
 .buttom-header-bookmarks::before {
   content: "";
   position: absolute;
-  display: block;
   width: 14px;
   height: 16px;
   background-image: url(../img/icon-bookmark.svg);
@@ -217,11 +216,9 @@ a {
   left: 16px;
 }
 
-.button-goods .buttom-header-basket::before,
-.button-goods-buy::before {
+.buttom-header-basket::before {
   content: "";
   position: absolute;
-  display: block;
   width: 15px;
   height: 15px;
   background-image: url(../img/icon-cart.svg);
@@ -339,7 +336,6 @@ a {
 .header-contacts a::before {
   content: "";
   position: absolute;
-  display: block;
   width: 19px;
   height: 19px;
   background-image: url(../img/icon-phone.svg);
@@ -389,7 +385,6 @@ a {
 .user-entry::before {
   content: "";
   position: absolute;
-  display: block;
   width: 20px;
   height: 17px;
   background-image: url(../img/icon-login.svg);
@@ -421,7 +416,6 @@ a {
 .account-name::before {
   content: "";
   position: absolute;
-  display: block;
   width: 20px;
   height: 18px;
   background-image: url(../img/icon-user.svg);
@@ -432,7 +426,6 @@ a {
 .account-exit::after {
   content: "";
   position: absolute;
-  display: block;
   width: 20px;
   height: 17px;
   background-image: url(../img/icon-logout.svg);
@@ -457,7 +450,6 @@ a {
 .account-breadcrumbs li:not(:last-child)::after {
   content: "";
   position: absolute;
-  display: block;
   width: 4px;
   height: 4px;
   background-color: #32425c;
@@ -693,7 +685,6 @@ a {
 .product-flag::after {
   content: "";
   position: absolute;
-  display: block;
   width: 60px;
   height: 59px;
   background-image: url(../img/new-flag.png);
@@ -896,7 +887,6 @@ a {
 .slider-catalog-controls::after,
 .slider-service-controls::after {
   content: "";
-  display: block;
   position: absolute;
   background-repeat: no-repeat;
 }
@@ -1045,7 +1035,6 @@ a {
 .model-item-flag::after {
   content: "";
   position: absolute;
-  display: block;
   width: 60px;
   height: 59px;
   background-image: url(../img/new-flag.png);
@@ -1102,7 +1091,6 @@ a {
 
 .price::after {
   content: "";
-  display: block;
   position: absolute;
   width: 0;
   height: 0;
@@ -1162,9 +1150,9 @@ a {
 
 /* hover active --- goods and  */
 
-/*работает странно, не успеваю по кликать на купить и закладки )))*/
+/*работает странно, не успеваю по кликать на купить и закладки, вешал li  тоже не вышло, я так понимаю ждем JS )*/
 
-.perforators-model-item h3:hover~.model-item-finalize {
+.perforators-model-item h3:hover ~ .model-item-finalize {
   visibility: visible;
 }
 
@@ -1311,7 +1299,6 @@ a {
 .company-item::before {
   content: "";
   position: absolute;
-  display: block;
   width: 25px;
   height: 2px;
   background-color: #ee3643;
@@ -1353,7 +1340,6 @@ a {
 .close::after {
   content: "";
   position: absolute;
-  display: block;
   width: 27px;
   height: 4px;
   background-color: #ee3643;
@@ -2114,7 +2100,6 @@ a {
 .popup-order p::before {
   content: "";
   position: absolute;
-  display: block;
   width: 66px;
   height: 66px;
   background-image: url(../img/icon-oreder.png);
