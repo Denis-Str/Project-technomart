@@ -1339,6 +1339,14 @@ a {
   top: 33px;
 }
 
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  background-color: transparent;
+}
+
 .close::before,
 .close::after {
   content: "";
@@ -1449,6 +1457,7 @@ a {
 .message-form-inner textarea {
   padding-left: 12px;
   padding-top: 8px;
+  border-radius: 3px;
 }
 
 .form-close::before,
@@ -1571,6 +1580,7 @@ a {
   padding-top: 36px;
 }
 
+.copyright,
 .feedback-email p,
 .design p {
   margin: 0;
