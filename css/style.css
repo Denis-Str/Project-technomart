@@ -78,8 +78,6 @@ a {
 }
 
 .price-hidden,
-/* .model-item-finalize, */
-
 .popup-order,
 .popup-map,
 .message-form {
@@ -1422,7 +1420,6 @@ a {
 }
 
 .close {
-  position: absolute;
   top: 0;
   right: 0;
   border: 0;
