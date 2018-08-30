@@ -115,15 +115,19 @@
             <p class="filtr-caption">Фильтр:</p>
             <fieldset class="filtr-price">
               <legend>Цена:</legend>
-              <p class="filtr-price-togge">
-                <input name="filtr-price-togge" type="range" id="filtr-price-togge" min="0" max="40000" value="0" step="100" aria-label="Цена">
-              </p>
+              <div class="filtr-price-togge">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
               <div class="price-inner">
                 <p class="price-min">
-                  <input type="number" name="price-min" value="0" aria-label="минималаня цена">
+                  <input type="text" name="price-min" value="0" aria-label="минималаня цена">
                 </p>
                 <p class="price-max">
-                  <input type="number" name="price-max" value="30000" aria-label="максимальная цена">
+                  <input type="text" name="price-max" value="30000" aria-label="максимальная цена">
                 </p>
               </div>
             </fieldset>

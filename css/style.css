@@ -1830,7 +1830,6 @@ a {
 
 .breadcrumbs-nav-item:not(:last-child)::after {
   content: "";
-  display: block;
   position: absolute;
   width: 8px;
   height: 12px;
@@ -1956,31 +1955,22 @@ a {
   display: none;
 }
 
-.filtr-price::after,
-.filtr-maker::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-bottom: 1px solid #e5e5e5;
-  width: 220px;
-  height: 1px;
-  bottom: -27px;
-}
-
 .filtr-price legend {
   margin-bottom: 13px;
 }
 
 .filtr-price-togge {
+  position: relative;
   width: 220px;
   height: 80px;
   background-color: #f7f3ec;
   border-radius: 5px;
-  padding-top: 32px;
+  padding-top: 40px;
   padding-left: 20px;
 }
 
 .price-inner {
+  position: relative;
   margin-top: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1990,8 +1980,8 @@ a {
           justify-content: space-between;
 }
 
-.price-min input[type="number"],
-.price-max input[type="number"] {
+.price-min input[type="text"],
+.price-max input[type="text"] {
   width: 95px;
   height: 38px;
   background-color: #f7f3ec;
@@ -2000,7 +1990,45 @@ a {
   text-align: center;
   font-size: 17px;
   line-height: 18px;
-  padding-left: 15px;
+  padding-left: 5px;
+}
+
+.filtr-price-togge .scale {
+  width: 180px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.filtr-price-togge .bar {
+  width: 80%;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range-toggle {
+  width: 20px;
+  height: 20px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+}
+
+.range-toggle-max {
+  left: 160px;
+}
+
+.price-min::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: #444444;
+  top: 50%;
+  left: 105px;
 }
 
 .filtr-maker-list,
@@ -2045,7 +2073,6 @@ a {
 .filtr-maker-item label::before,
 .filtr-power-item label::before {
   content: "";
-  display: block;
   position: absolute;
   background-repeat: no-repeat;
   left: 0px;
