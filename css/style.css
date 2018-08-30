@@ -77,13 +77,13 @@ a {
   background-color: #ba2732;
 }
 
-.price-hidden,
-.popup-order,
-.popup-map,
-.message-form {
+.price-hidden {
   visibility: hidden;
 }
 
+.popup-order,
+.popup-map,
+.message-form,
 .account-hidden,
 .user-login-hidden {
   display: none;
@@ -1408,12 +1408,12 @@ a {
 
 /* pop-up*/
 
-.popup-map,
 .message-form {
-  position: absolute;
+  position: fixed;
 }
 
 .popup-map {
+  position: absolute;
   width: 940px;
   height: 446px;
   top: 33px;
@@ -1458,8 +1458,8 @@ a {
 /* form */
 
 .message-form {
-  left: 160px;
-  top: 206px;
+  left: 387px;
+  top: 293px;
   width: 620px;
   height: 430px;
   background-color: #ffffff;
@@ -2090,26 +2090,12 @@ a {
 
 /* hover checked form  */
 
-#bosch:hover~label[for="bosch"]::before,
-#interskov:hover~label[for="interskov"]::before,
-#makita:hover~label[for="makita"]::before,
-#dewalt:hover~label[for="dewalt"]::before,
-#bosch:hover~label[for="bosch"]::before,
-#hitachi:hover~label[for="hitachi"]::before {
-  opacity: 0.5;
+.filtr-maker-item input[type="checkbox"]:hover + label::before,
+.filtr-power-item input[type="radio"]:hover + label::before {
+   opacity: 0.5;
 }
 
-#accumulator:hover~label[for="accumulator"]::before,
-#volts:hover~label[for="volts"]::before {
-  opacity: 0.5;
-}
-
-#bosch:checked~label[for="bosch"]::before,
-#interskov:checked~label[for="interskov"]::before,
-#makita:checked~label[for="makita"]::before,
-#dewalt:checked~label[for="dewalt"]::before,
-#bosch:checked~label[for="bosch"]::before,
-#hitachi:checked~label[for="hitachi"]::before {
+.filtr-maker-item input[type="checkbox"]:checked + label::before {
   width: 27px;
   height: 23px;
   background-image: url(../img/checkbox-on.svg);
@@ -2117,10 +2103,14 @@ a {
   opacity: 1;
 }
 
-#accumulator:checked~label[for="accumulator"]::before,
-#volts:checked~label[for="volts"]::before {
+.filtr-power-item input[type="radio"]:checked + label::before  {
   background-image: url(../img/radio-on.svg);
   opacity: 1;
+}
+
+.filtr-maker-item input[type="checkbox"]:focus,
+.filtr-power-item input[type="radio"]:focus  {  
+  border: 1px solid blue;
 }
 
 /* perforators-sort */
@@ -2247,9 +2237,9 @@ a {
 /* .popup-order */
 
 .popup-order {
-  position: absolute;
-  top: 91px;
-  left: 160px;
+  position: fixed;
+  top: 412px;
+  left: 433px;
   width: 620px;
   height: 282px;
   background-color: #ffffff;
