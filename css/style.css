@@ -87,7 +87,7 @@ input[type="radio"].visually-hidden {
   visibility: hidden;
 }
 
-/* .popup-order, */
+.popup-order,
 .popup-map,
 .message-form,
 .account-hidden,
@@ -444,8 +444,8 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   color: #32425c;
   margin: 0;
-  padding-top: 4px;
-  padding-left: 10px;
+  padding-top: 2px;
+  padding-left: 9px;
 }
 
 .user-login,
@@ -459,7 +459,7 @@ input[type="radio"].visually-hidden {
   align-items: flex-start;
   position: relative;
   width: 300px;
-  padding-top: 44px;
+  padding-top: 45px;
 }
 
 .account {
@@ -486,7 +486,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 121px;
   margin-right: 10px;
-  padding-left: 48px;
+  padding-left: 47px;
 }
 
 .user-entry-svg {
@@ -514,7 +514,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 12px;
+  padding-top: 13px;
 }
 
 .account-name {
@@ -534,8 +534,8 @@ input[type="radio"].visually-hidden {
 }
 
 .account-exit-svg {
-   right: 10px;
-   top: 15px;
+  right: 10px;
+  top: 15px;
 }
 
 .account-breadcrumbs {
@@ -941,8 +941,8 @@ input[type="radio"].visually-hidden {
   background-color: #32425c;
   -webkit-box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 16px;
+  padding-bottom: 15px;
   padding-left: 22px;
 }
 
@@ -966,7 +966,7 @@ input[type="radio"].visually-hidden {
 
 .service-slides-1 {
   background-image: url(../img/service-delivery.png);
-  background-position: 230px 52px;
+  background-position: 230px 55px;
 }
 
 .service-slides-2 {
@@ -1433,7 +1433,7 @@ input[type="radio"].visually-hidden {
 .company-list {
   position: relative;
   margin-left: 35px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .company-item {
@@ -1455,8 +1455,8 @@ input[type="radio"].visually-hidden {
 .button-company,
 .button-message {
   background-color: #ee3643;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   text-align: center;
 }
 
@@ -1503,6 +1503,7 @@ input[type="radio"].visually-hidden {
 .map-close {
   position: absolute;
   right: -40px;
+  z-index: 20;
 }
 
 .close::before,
@@ -1674,10 +1675,9 @@ input[type="radio"].visually-hidden {
 .footer-caption {
   font-size: 30px;
   line-height: 30px;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 15px;
-  margin-bottom: 5px;
-
+  margin-bottom: 4px;
 }
 
 .footer-contacts p,
@@ -1757,7 +1757,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding-top: 38px;
+  padding-top: 36px;
 }
 
 .copyright,
@@ -1960,8 +1960,8 @@ input[type="radio"].visually-hidden {
 .perforators-sort,
 .filtr-caption {
   background-color: #f7f3ec;
-  padding-top: 8px;
-  padding-bottom: 15px;
+  padding-top: 9px;
+  padding-bottom: 14px;
   border-radius: 3px;
 }
 
@@ -1972,7 +1972,7 @@ input[type="radio"].visually-hidden {
 }
 
 .perforators-list .perforators-model-list {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .filtr-caption {
@@ -2092,7 +2092,7 @@ input[type="radio"].visually-hidden {
   width: 10px;
   height: 1px;
   background-color: #444444;
-  top: 50%;
+  top: 21px;
   left: 105px;
 }
 
@@ -2103,7 +2103,7 @@ input[type="radio"].visually-hidden {
 
 .filtr-maker-item,
 .filtr-power-item {
-  padding-left: 18px;
+  padding-left: 17px;
   margin-bottom: 20px;
 }
 
@@ -2125,8 +2125,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: #000000;
   width: 140px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
   border-radius: 3px;
@@ -2333,7 +2333,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 66px;
   height: 66px;
-  background-image: url(../img/icon-oreder.svg);
+  background-image: url(../img/icon-oreder.png);
   background-repeat: no-repeat;
   left: 80px;
   top: 55px;

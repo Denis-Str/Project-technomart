@@ -1,6 +1,6 @@
 var linkMessage = document.querySelector(".button-message");
 var popupForm = document.querySelector(".message-form");
-var close = popupForm.querySelector(".close");
+var close = document.querySelector(".form-close");
 
 linkMessage.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -15,15 +15,15 @@ close.addEventListener("click", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-      if (popupForm.classList.contains("modal-show")) {
-        popupForm.classList.remove("modal-show");
-      }
+    if (popupForm.classList.contains("modal-show")) {
+      popupForm.classList.remove("modal-show");
+    }
   }
 });
 
 var linkMap = document.querySelector(".mini-map");
 var popupMap = document.querySelector(".popup-map");
-var close = popupMap.querySelector(".close");
+var close = popupMap.querySelector(".map-close");
 
 linkMap.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -38,14 +38,15 @@ close.addEventListener("click", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-      if (popupMap.classList.contains("modal-show-map")) {
-        popupMap.classList.remove("modal-show-map");
-      }
+    if (popupMap.classList.contains("modal-show-map")) {
+      popupMap.classList.remove("modal-show-map");
+    }
   }
 });
 
 // не работает - товар добавлен в карзину - только по первову селектору
-var linkOrder = document.querySelectorAll(".perforators-model-item .button-goods-buy");
+// var linkOrder = document.querySelectorAll(".perforators-model-item .button-goods-buy");
+var linkOrder = document.querySelector(".button-goods-buy");
 var popupOrder = document.querySelector(".popup-order");
 var close = popupOrder.querySelector(".popup-order-close");
 
@@ -62,8 +63,8 @@ close.addEventListener("click", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-      if (popupOrder.classList.contains("modal-show-map")) {
-        popupOrder.classList.remove("modal-show-map");
-      }
+    if (popupOrder.classList.contains("modal-show-map")) {
+      popupOrder.classList.remove("modal-show-map");
+    }
   }
 });
