@@ -1033,45 +1033,45 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
 }
 
-#slider-catalog-button-1:checked~.slider-catalog-controls label[for="slider-catalog-button-1"],
-#slider-catalog-button-2:checked~.slider-catalog-controls label[for="slider-catalog-button-2"] {
+.slider-catalog-button-1:checked~.slider-catalog-controls label[for="slider-catalog-button-1"],
+.slider-catalog-button-2:checked~.slider-catalog-controls label[for="slider-catalog-button-2"] {
   background-color: #ee3643;
 }
 
-#slider-service-button-1:checked~.slider-service-controls label[for="slider-service-button-1"],
-#slider-service-button-2:checked~.slider-service-controls label[for="slider-service-button-2"],
-#slider-service-button-3:checked~.slider-service-controls label[for="slider-service-button-3"] {
+.slider-service-button-1:checked~.slider-service-controls label[for="slider-service-button-1"],
+.slider-service-button-2:checked~.slider-service-controls label[for="slider-service-button-2"],
+.slider-service-button-3:checked~.slider-service-controls label[for="slider-service-button-3"] {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
   box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
   color: #32425c;
 }
 
-#slider-catalog-button-1:checked~.slider-catalog-inner .slider-catalog-slides {
+.slider-catalog-button-1:checked~.slider-catalog-inner .slider-catalog-slides {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
 }
 
-#slider-catalog-button-2:checked~.slider-catalog-inner .slider-catalog-slides {
+.slider-catalog-button-2:checked~.slider-catalog-inner .slider-catalog-slides {
   -webkit-transform: translate(-620px);
   -ms-transform: translate(-620px);
   transform: translate(-620px);
 }
 
-#slider-service-button-1:checked~.slider-service-inner .slider-service-slides {
+.slider-service-button-1:checked~.slider-service-inner .slider-service-slides {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
 }
 
-#slider-service-button-2:checked~.slider-service-inner .slider-service-slides {
+.slider-service-button-2:checked~.slider-service-inner .slider-service-slides {
   -webkit-transform: translate(-830px);
   -ms-transform: translate(-830px);
   transform: translate(-830px);
 }
 
-#slider-service-button-3:checked~.slider-service-inner .slider-service-slides {
+.slider-service-button-3:checked~.slider-service-inner .slider-service-slides {
   -webkit-transform: translate(-1660px);
   -ms-transform: translate(-1660px);
   transform: translate(-1660px);
