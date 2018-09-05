@@ -61,7 +61,8 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -97,47 +98,101 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
   display: block;
-  animation: bounce 0.5s;
+  -webkit-animation: bounce 0.5s;
+          animation: bounce 0.5s;
 }
 
 .modal-show-map {
   display: block;
-  animation: bounce-map 0.3s;
+  -webkit-animation: bounce-map 0.3s;
+          animation: bounce-map 0.3s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
 
   70% {
-    transform: translateY(300px);
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
   }
 
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes bounce-map {
+  0% {
+    -webkit-transform: translateY(2000px);
+            transform: translateY(2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes bounce-map {
   0% {
-    transform: translateY(2000px);
+    -webkit-transform: translateY(2000px);
+            transform: translateY(2000px);
   }
 
   70% {
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
 
   90% {
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -456,7 +511,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
   width: 300px;
   padding-top: 45px;
@@ -1493,7 +1550,9 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.close {
+.map-close,
+.form-close,
+.popup-order-close {
   top: 0;
   right: 0;
   border: 0;
@@ -1503,11 +1562,14 @@ input[type="radio"].visually-hidden {
 .map-close {
   position: absolute;
   right: -40px;
-  z-index: 20;
 }
 
-.close::before,
-.close::after {
+.map-close::before,
+.map-close::after,
+.form-close::before,
+.form-close::after,
+.popup-order-close::before,
+.popup-order-close::after {
   content: "";
   position: absolute;
   width: 27px;
@@ -1517,9 +1579,12 @@ input[type="radio"].visually-hidden {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   cursor: pointer;
+  z-index: 15;
 }
 
-.close::after {
+.map-close::after,
+.form-close::after,
+.popup-order-close::after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -1702,7 +1767,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1779,7 +1845,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 150px;
   margin-right: 101px;
 }
@@ -2076,7 +2143,8 @@ input[type="radio"].visually-hidden {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
   position: absolute;
   top: 30px;

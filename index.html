@@ -7,7 +7,7 @@
   <meta name="keywords" content="Техномарт">
   <meta name="description" content="Интернет-магазин строительных материалов и инструмента для ремонта">
   <link href="./css/normalize.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
@@ -124,7 +124,8 @@
       </ul>
       <div class="discount wrap">
         <div class="slider-catalog">
-          <input type="radio" id="slider-catalog-button-1" class="slider-catalog-button-1" name="catalog-toggle" checked>
+          <input type="radio" id="slider-catalog-button-1" class="slider-catalog-button-1" name="catalog-toggle"
+            checked>
           <input type="radio" id="slider-catalog-button-2" class="slider-catalog-button-2" name="catalog-toggle">
           <div class="slider-catalog-controls">
             <label for="slider-catalog-button-1"></label>
@@ -353,15 +354,20 @@
         <a href="#" class="button button-message">Заблудились? Напишите нам</a>
       </div>
       <div class="popup-map">
-        <button type="button" class="close map-close">
+        <button type="button" class="map-close">
           <span class="visually-hidden">
             Закрыть
           </span>
         </button>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5673475288731!2d30.3192226!3d59.9393211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1536085822118"
           width="940" height="447" style="border:0" allowfullscreen></iframe>
-        <img src="./img/map.jpg" width="940" height="447" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"> </div>
-          <form action="echo.htmlacademy.ru" method="get" class="message-form">
+        <img src="./img/map.jpg" width="940" height="447" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></div>
+      <form action="echo.htmlacademy.ru" method="get" class="message-form">
+        <a type="button" class="form-close">
+          <span class="visually-hidden">
+            Закрыть
+          </span>
+        </a>
         <div class="message-form-inner">
           <p class="message-name">
             <label for="name">Ваше имя:</label>
@@ -381,24 +387,20 @@
             Отправить
           </button>
         </p>
-        <button type="button" class="close form-close">
-          <span class="visually-hidden">
-            Закрыть
-          </span>
-        </button>
-        </form>
-        <div class="popup-order">
-          <p>
-            Товар добавлен в корзину!
-          </p>
-          <div class="popup-order-inner">
-            <button type="submit" class="button button-popup-order-process">Оформить заказ</button>
-            <a href="#" class="button button-popup-order-resume">Продолжить покупки</a>
-          </div>
-          <button type="button" class="close popup-order-close">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
+
+      </form>
+      <div class="popup-order">
+        <p>
+          Товар добавлен в корзину!
+        </p>
+        <div class="popup-order-inner">
+          <button type="submit" class="button button-popup-order-process">Оформить заказ</button>
+          <a href="#" class="button button-popup-order-resume">Продолжить покупки</a>
         </div>
+        <button type="button" class="popup-order-close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -484,7 +486,7 @@
     </div>
   </footer>
   <div class="modal-overlay"></div>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

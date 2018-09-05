@@ -1,13 +1,13 @@
 var linkMessage = document.querySelector(".button-message");
 var popupForm = document.querySelector(".message-form");
-var close = document.querySelector(".form-close");
+var closeForm = document.querySelector(".form-close");
 
 linkMessage.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupForm.classList.add("modal-show");
 });
 
-close.addEventListener("click", function (evt) {
+closeForm.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupForm.classList.remove("modal-show");
 });
@@ -23,14 +23,14 @@ window.addEventListener("keydown", function (evt) {
 
 var linkMap = document.querySelector(".mini-map");
 var popupMap = document.querySelector(".popup-map");
-var close = popupMap.querySelector(".map-close");
+var closeMap = document.querySelector(".map-close");
 
 linkMap.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupMap.classList.add("modal-show-map");
 });
 
-close.addEventListener("click", function (evt) {
+closeMap.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupMap.classList.remove("modal-show-map");
 });
@@ -48,14 +48,14 @@ window.addEventListener("keydown", function (evt) {
 // var linkOrder = document.querySelectorAll(".perforators-model-item .button-goods-buy");
 var linkOrder = document.querySelector(".button-goods-buy");
 var popupOrder = document.querySelector(".popup-order");
-var close = popupOrder.querySelector(".popup-order-close");
+var closeOrder = document.querySelector(".popup-order-close");
 
 linkOrder.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupOrder.classList.add("modal-show-map");
 });
 
-close.addEventListener("click", function (evt) {
+closeOrder.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupOrder.classList.remove("modal-show-map");
 });
