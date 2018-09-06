@@ -11,7 +11,7 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
   color: #000000;
-  font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -26,6 +26,7 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
+  vertical-align: middle;
   color: #000000;
 }
 
@@ -474,7 +475,6 @@ input[type="radio"].visually-hidden {
 .header-contacts a {
   position: relative;
   width: 270px;
-  font-family: Cuprum;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -954,7 +954,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service-slides p {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   padding-top: 26px;
   padding-left: 80px;
 }
@@ -981,6 +981,7 @@ input[type="radio"].visually-hidden {
 
 .slider-catalog-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 10px;
   height: 10px;
   margin: 0 3px;
@@ -1241,7 +1242,7 @@ input[type="radio"].visually-hidden {
 
 .perforators-model-item h3 {
   margin: 0 auto;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -1251,7 +1252,7 @@ input[type="radio"].visually-hidden {
 
 .old-price,
 .price {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -1410,7 +1411,7 @@ input[type="radio"].visually-hidden {
 
 .service-text,
 .about-perforator-text {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   margin-top: 25px;
   margin-bottom: 38px;
   font-size: 13px;
@@ -1467,7 +1468,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 26px;
   padding: 0;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1686,7 +1687,7 @@ input[type="radio"].visually-hidden {
 .message-form-inner input[type="text"],
 .message-form-inner input[type="email"],
 .message-form-inner textarea {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   padding-left: 14px;
@@ -1931,7 +1932,7 @@ input[type="radio"].visually-hidden {
 .perforators-filtr,
 .perforators-sort,
 .perforators-breadcrumbs-list {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2005,7 +2006,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 20px;
   background-color: #f2f6f8;
-  font-family: 'Cuprum';
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
